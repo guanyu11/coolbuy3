@@ -44,3 +44,22 @@ export const Article =loadable({
   loader:_=>import("./article"),
   loading:Loading
 })
+
+export const GoodsList =loadable({
+  loader:_=>import("./goodsList"),
+  loading:Loading
+})
+
+export const Details =loadable({
+  loader:_=>import("./details"),
+  loading:Loading
+})
+
+export const Search =loadable({
+  loader:_=>import("./search"),
+  loading:Loading
+})
+export const  SearchContent =loadable({
+  loader:_=>import("./search/searchContent"),
+  loading:Loading
+})
