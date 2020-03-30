@@ -13,7 +13,7 @@ class Product extends Component {
                 <div className="goodCon">
 
                     {product.map((item)=>{
-                      return  <NavLink  to={"/detail/"+item}>
+                      return  <NavLink  to={"/details/"+item}>
                           <div className="gooditem" >
                         <img src="https://media.ifanrusercontent.com/user_files/canton/79/fc/79fcb3e94bf5e46f9cec5c130d11f7c6b1e05aa2-0d083ac01d8ff04fc27ebce1315775805f75e4d1.png!large" />
                         <div>
