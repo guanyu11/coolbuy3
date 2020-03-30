@@ -4,6 +4,7 @@ import { mapStateToProps, mapDispatchToProps } from './connect'
 import HomeIndex from "./homeIndex"
 import DownNav from "./downNav"
 import Medium from "./medium"
+import {HomeContainer} from "./styled"
 @connect(mapStateToProps, mapDispatchToProps)
 class Home extends Component {
     render() {
@@ -13,16 +14,22 @@ class Home extends Component {
         // console.log(activity,"activity home")
             if( !this.props.match.params.id){
                 return (
-                    <div>
+                    <HomeContainer>
+                        <div>
                   <DownNav category={category}></DownNav>
                  <HomeIndex></HomeIndex></div>
+                    </HomeContainer>
+                    
                 )
             }else{
                 return (
-                  <div>
+                    <HomeContainer>
+                        <div>
                   <DownNav  category={category}></DownNav>
                   <Medium></Medium>
                  </div>
+                    </HomeContainer>
+                  
                 )
             }
     }

@@ -34,7 +34,7 @@ class goodList extends Component {
                                             goodList[item.id] ? goodList[item.id].map((good) => {
                                                 return (
                                                     <NavLink
-                                                        to={'/detail/' + good.id}
+                                                        to={'/details/' + good.id}
                                                         key={good.id}
                                                         className={index % 2 == 1 ? 'product-item no-margin' : 'product-item'}
                                                     >
